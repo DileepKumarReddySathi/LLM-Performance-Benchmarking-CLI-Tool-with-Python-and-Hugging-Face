@@ -1,0 +1,8 @@
+transformers
+torch
+psutil
+pandas
+matplotlib
+pyyaml
+tqdm
+accelerate

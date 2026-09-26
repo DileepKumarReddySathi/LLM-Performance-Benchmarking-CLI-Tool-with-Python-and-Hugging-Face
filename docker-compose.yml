@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+      - ${HF_HOME:-~/.cache/huggingface}:/root/.cache/huggingface
+    environment:
+      - HF_TOKEN=${HF_TOKEN:-}
+# Uncomment the following block to enable GPU support if you have an NVIDIA GPU and nvidia-docker installed
+#    deploy:
+#      resources:
+#        reservations:
+#          devices:
+#            - driver: nvidia
+#              count: all
+#              capabilities: [gpu]

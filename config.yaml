@@ -1,0 +1,6 @@
+models:
+  - "sshleifer/tiny-gpt2"
+  - "hf-internal-testing/tiny-random-gpt2"
+  - "sshleifer/tiny-ctrl"
+dataset_path: "datasets/sample_prompts.jsonl"
+max_new_tokens: 15
